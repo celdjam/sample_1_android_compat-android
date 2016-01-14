@@ -1,0 +1,1 @@
+include ':navdrawer', ':tabbed', ':fullscreen', ':login', ':scrolling', ':blank', ':masterdetail', ':settings', ':map'
