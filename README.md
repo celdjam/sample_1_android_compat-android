@@ -21,19 +21,19 @@
     
 #Add an android listview programmatically
 
-public Dialog onCreateDialog(Bundle savedInstanceState)
-{
-	View view = mLayoutInflater.inflate(android.R.layout.list_content, null);
-	AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-	builder.setView(view);
-	builder.setTitle(R.string.title_continue_regularization);
-	builder.setNegativeButton(getString(R.string.cancel), null);
-	builder.setCancelable(false);
-			
-	mListView = (ListView)view.findViewById(android.R.id.list);
-	mListView.setOnItemClickListener(this);
-			
-	AlertDialog dialog = builder.create();
-	dialog.setOnShowListener(this);
-	return dialog;
-}
+    public Dialog onCreateDialog(Bundle savedInstanceState)
+    {
+        View view = mLayoutInflater.inflate(android.R.layout.list_content, null);
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setView(view);
+        builder.setTitle(R.string.title_continue_regularization);
+        builder.setNegativeButton(getString(R.string.cancel), null);
+        builder.setCancelable(false);
+        
+        mListView = (ListView)view.findViewById(android.R.id.list);
+        mListView.setOnItemClickListener(this);
+        
+        AlertDialog dialog = builder.create();
+        dialog.setOnShowListener(this);
+        return dialog;
+     }
